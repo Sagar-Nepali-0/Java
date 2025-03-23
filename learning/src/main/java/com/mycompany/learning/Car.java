@@ -8,16 +8,28 @@ package com.mycompany.learning;
  * @author sagar
  */
 import java.util.Scanner;
+// Scanner modules is asking input from user.
 
+// This java code show how OOP => Object Oriented Programming Work.
 public class Car {
-    Scanner scanner = new Scanner(System.in);
-    
-    String company = "Rolls Royce";
-    String model = "Rolls-Royce Boat Tail";
-    int year = 2022;
-    String color = "Blue";
-    double price = 28000000;
-    boolean isRunning = false;
+    Scanner scanner = new Scanner(System.in); 
+    // Scanner scanner = new Scanner(System.in); it is nothing complicated. Just creating a object and giving a access of Scanner throughout the code.
+    String company;
+    String model;
+    int year;
+    String color;
+    double price;
+    boolean isRunning;
+
+    Car(String company, String model, int year, String color, double price, boolean isRunning){
+        // this.variables = variables; IT IS CALLED CONSTRUCTORS. IT REDUCE THE QUANTITY OF CODE DUE TO ITS REUSE ABLE. 
+        this.company = company;
+        this.model = model;
+        this.year = year;
+        this.color = color;
+        this.price = price;
+        this.isRunning = isRunning;
+    }
     
     void carDetails(){
         System.out.println("Car Detail\n\nCompany: "+company+"\nModel: "+model+"\n"

@@ -6,15 +6,20 @@ package com.mycompany.learning;
  *
  * @author sagar nepali
  */
-// This java code show how class and object work with the example of Car and Engine on/off.
 
 public class Main {
 
+    static void carFunction(){
+        Car car1 = new Car("Rolls Royce", "Rolls-Royce Boat Tail", 2022, "Blue", 28000000, false);
+        Car car2 = new Car("Toyota", "Camry", 2022, "Black", 30000, true);
+        car1.carDetails();
+        car2.carDetails();
+        System.out.println();
+        car2.start();
+       }
+
+
     public static void main(String[] args) {
-       Car car = new Car();
-       
-       car.carDetails();
-       System.out.println();
-       car.start();
+        carFunction();
     }
 }
