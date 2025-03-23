@@ -5,7 +5,7 @@
 package com.mycompany.learning;
 /**
  *
- * @author sagar
+ * @author sagar nepali
  */
 import java.util.Scanner;
 // Scanner modules is asking input from user.
