@@ -6,7 +6,7 @@ package com.mycompany.learning;
  *
  * @author sagar nepali
  */
-
+// This java code show how class and object work with the example of Car and Engine on/off.
 
 public class Main {
 
